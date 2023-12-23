@@ -5,7 +5,6 @@ subtitle: third case study
 categories: project
 tags: [analyzing, defending, cyber security]
 ---
-#### 1.cyber kill chain list
 ## SolarWinds Exploit Analysis using Cyber Kill Chain
 
 ### 1. Reconnaissance:
@@ -51,7 +50,6 @@ tags: [analyzing, defending, cyber security]
 
 
 
-#### 2.list of possible mitigations
 ### Reconnaissance:
 - Implement strict access controls and least privilege principles to limit information available to potential attackers.
 - Monitor and analyze network traffic for unusual patterns or reconnaissance activities.
@@ -96,7 +94,6 @@ tags: [analyzing, defending, cyber security]
 
 
 
-#### 3.utilise in each phase
 ### Reconnaissance:
 - **Security Information and Event Management (SIEM) Systems:**
   - *Reason:* SIEM tools can analyze logs and events from various sources to detect unusual patterns or activities that may indicate reconnaissance activities.
