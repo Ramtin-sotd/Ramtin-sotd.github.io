@@ -6,27 +6,51 @@ categories: project
 tags: [analyzing, defending, cyber security]
 ---
 # 1.cyber kill chain table
-| Cyber Kill Chain Stage      | SolarWinds Exploit Analysis                                                                                                                          |
-|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Reconnaissance**          | The attackers conducted extensive reconnaissance to identify vulnerabilities within SolarWinds software and understand target organizations.           |
-|                             | - Studied the software architecture, update processes, and potential high-value targets.                                                                 |
-|                             | - Gathered information for precision targeting.                                                                                                          |
-| **Weaponization**           | The attackers weaponized the SolarWinds Orion software by injecting a malicious backdoor into the software updates.                                   |
-|                             | - Manipulated the software build process to include a trojanized version with the Sunburst malware.                                                       |
-| **Delivery**                | The weaponized updates were delivered to target organizations as seemingly legitimate software updates. Users unknowingly installed compromised updates.|
-|                             | - Delivered through the legitimate software supply chain.                                                                                                 |
-| **Exploitation**            | The Sunburst malware, once installed, exploited vulnerabilities in SolarWinds software to establish a foothold on target systems.                          |
-|                             | - Exploited the trust associated with SolarWinds updates.                                                                                                 |
-|                             | - Executed malicious payloads, potentially using zero-day exploits.                                                                                      |
-| **Installation**            | The attackers installed the Sunburst malware on compromised systems, establishing persistence and maintaining a covert presence.                          |
-|                             | - Created backdoors and maintained a hidden presence.                                                                                                    |
-|                             | - Actively avoided detection to remain undetected for an extended period.                                                                                 |
-| **Command and Control (C2)**| The Sunburst malware communicated with external servers controlled by the attackers, providing remote control and data exfiltration capabilities.        |
-|                             | - Established covert communication channels.                                                                                                            |
-|                             | - Maintained control over compromised systems.                                                                                                           |
-| **Actions on Objectives**   | The ultimate goal was cyber espionage, with attackers exfiltrating sensitive data, potentially for intelligence purposes.                                |
-|                             | - Conducted data exfiltration and manipulation.                                                                                                         |
-|                             | - Potentially utilized stolen information for strategic purposes.                                                                                        |
+## SolarWinds Exploit Analysis using Cyber Kill Chain
+
+### 1. Reconnaissance:
+- **Description:** Attackers conducted extensive reconnaissance to identify vulnerabilities within SolarWinds software and understand target organizations.
+- **Activities:**
+  - Studied software architecture, update processes, and potential high-value targets.
+  - Gathered information for precision targeting.
+
+### 2. Weaponization:
+- **Description:** Attackers weaponized the SolarWinds Orion software by injecting a malicious backdoor into the software updates.
+- **Activities:**
+  - Manipulated the software build process to include a trojanized version with the Sunburst malware.
+
+### 3. Delivery:
+- **Description:** Weaponized updates were delivered to target organizations as seemingly legitimate software updates.
+- **Activities:**
+  - Delivered through the legitimate software supply chain.
+
+### 4. Exploitation:
+- **Description:** The Sunburst malware, once installed, exploited vulnerabilities in SolarWinds software to establish a foothold on target systems.
+- **Activities:**
+  - Exploited the trust associated with SolarWinds updates.
+  - Executed malicious payloads, potentially using zero-day exploits.
+
+### 5. Installation:
+- **Description:** Attackers installed the Sunburst malware on compromised systems, establishing persistence and maintaining a covert presence.
+- **Activities:**
+  - Created backdoors and maintained a hidden presence.
+  - Actively avoided detection to remain undetected for an extended period.
+
+### 6. Command and Control (C2):
+- **Description:** The Sunburst malware communicated with external servers controlled by the attackers, providing remote control and data exfiltration capabilities.
+- **Activities:**
+  - Established covert communication channels.
+  - Maintained control over compromised systems.
+
+### 7. Actions on Objectives:
+- **Description:** The ultimate goal was cyber espionage, with attackers exfiltrating sensitive data, potentially for intelligence purposes.
+- **Activities:**
+  - Conducted data exfiltration and manipulation.
+  - Potentially utilized stolen information for strategic purposes.
+                                                                                      |
+
+
+
 # 2.list of possible mitigations
 ### Reconnaissance:
 - Implement strict access controls and least privilege principles to limit information available to potential attackers.
@@ -69,6 +93,8 @@ tags: [analyzing, defending, cyber security]
 - Regularly audit and monitor privileged accounts to detect and respond to suspicious activities.
 - Engage in threat intelligence sharing to stay informed about emerging threats and vulnerabilities.
 - Conduct regular security training and awareness programs for employees.
+
+
 
 # 3.utilise in each phase
 ### Reconnaissance:
